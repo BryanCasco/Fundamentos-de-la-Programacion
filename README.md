@@ -238,19 +238,61 @@ a = {
 print(a)
 #{'Nombre': 'Bryan', 'Edad': 17, 'Documento': 11526362}
 ```
-## List
 
-## Tuple
-
-## Dictionary
 
 # Tomando decisiones
 
 ## Sentencia if
+La sentencia condicional if nos permite comprobar si se cumple una cierta condición con el fin de ejecutar un proceso u otro. En su forma más simple se utiliza la palabra reservada if seguida de la condición a evaluar y dos puntos. Es decir, la estructura de esta sentencia es, por lo tanto, la condición es una expresión que devuelve un booleano (True/False). Por ejemplo:
 
-## Ciclo For
+```
+n = 2 
+if n == 2: 
+print('Es un dos') 
+[Output] Es un dos 
+``` 
+Si queremos especificar qué código hay que ejecutar en el caso de que la condición no se cumpla podemos añadir la sentencia "else".En este código estamos comprobando si n toma el valor 2. En caso de que sea así, se ejecuta la función print que muestra el texto "Es un dos". Si no se cumple, se ejecuta la función print que muestra el texto "No es un dos". 
+``` 
+n = 2 
+if n == 2: 
+print('Es un dos') 
+else: 
+print('No es un dos') 
+[Output] No es un dos
+``` 
+Podemos añadir tantas instrucciones elif como deseemos. Se evaluarán en orden y así que se cumpla una de las condiciones, se ejecutará el código sangrado que la sigue.
+
+## Ciclo For 
+La sentencia iterativa for nos permite ejecutar un proceso un número determinado de veces o para un conjunto determinado de valores. 
+Si quisiéramos leer esta instrucción sería algo como "para cada valor que hay en serie de valores, asigna dicho valor a 'variable' y ejecuta el código que le sigue". Es decir, se va a ejecutar el código una vez para cada uno de los elementos en "serie-de-valores". Comencemos por el ejemplo más simple, cuando la serie de valores son números:
+```
+for n in [1,2,3] 
+print(n) 
+[Output] 1 2 3 
+``` 
+En un caso como éste, en lugar de incluir la lista explícita de valores que va a tomar la variable n puede utilizarse una función como range. Esta genera un conjunto de números entre dos valores, pudiendo especificarse el incremento entre los valores. Simplemente se crea un "objeto range" que irá generando ese millón de números cuando se soliciten.
+``` 
+for n in range (1,4): 
+print(n) 
+[Output] 0 1 2 3  
+``` 
 
 ## Ciclo While
+Los bucles while no se repiten un número determinado de veces, sino mientras se cumpla una condición. Si quisiéramos leerlo sería algo como "Mientras se cumpla la condición, ejecuta el código y vuelve a evaluar si se sigue cumpliendo la condición". La condición es una expresión que devuelve un booleano (True/False). Y, nuevamente, el código que deseamos ejecutar dentro del bucle deberá aparecer sangrado con cuatro espacios en blanco o un tabulador. Por ejemplo: 
+```
+n = 1 
+while n < 8: 
+print(n)
+n = n + n  
+[Output] 1 2 4
+``` 
+Veamos con detalle cómo se ejecutaría este código:
+
+- Inicialmente n toma el valor 1 (primera línea del código).
+- Llegamos al bucle while y la primera línea del mismo (while n < 8) comprueba si se cumple la condición "¿es n menor que 8?". Sí, se cumple, de forma que se ejecuta el código     que hay en el interior del bucle, imprimiendo n y asignando a n un nuevo valor resultante de sumar a n su propio valor. Es decir, ahora n vale 2.
+- Y volvemos al comienzo del bucle y volvemos a preguntarnos si la condición se sigue cumpliendo "¿es n menor que 8?" Sí, por lo que se vuelve a ejecutar el código del bucle y     se asigna a n el nuevo valor de 4 (= 2 + 2).
+- Vuelve a cumplirse la condición de ser n menor que 8, por lo que se vuelve a ejecutar el código del bucle. Y se asigna a n el nuevo valor de 8 (= 4 + 4).
+- Y volvemos al comienzo del bucle y a preguntarnos "¿es n menor que 8?" Y ahora la respuesta es negativa (8 no es menor que 8), por lo que no se ejecuta el código del bucle y     el programa continuaría ejecutando las instrucciones que hubiese a continuación.
 
 ## Break
 
