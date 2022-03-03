@@ -136,7 +136,7 @@ print(type(a))       #Class "str", tambièn es valido comillas simples ''
 
 ## Casting en Python
 Hacer un cast o casting significa convertir un tipo de dato a otro. Anteriormente hemos visto tipos como los int, string o float. Pues bien, es posible convertir de un tipo a otro. 
-   -Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciones con dos tipos distintos.
+-Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciones con dos tipos distintos.
 ```
 a = 1      # Class 'int'
 b = 2.3    # Class 'float'
@@ -147,13 +147,15 @@ print(type(a)) # Class 'float'
 [Output] 3.3 
 ``` 
 Si intentamos sumar un int a un string, tendremos un error TypeError, es lógico que esto sea así, ya que en este caso b era "2.3", pero si fuera "Hola". ¿Cómo se podría sumar eso? No tiene sentido.
+
 ```
 a = 1
 b = "2.3"
 
 c = a + b    # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
-    -Conversión explicita. Por otro lado, podemos hacer conversiones entre tipos o cast de manera explícita haciendo uso de diferentes funciones que nos proporciona Python. 
+
+-Conversión explicita. Por otro lado, podemos hacer conversiones entre tipos o cast de manera explícita haciendo uso de diferentes funciones que nos proporciona Python. 
 
 Convertir float a int
 
