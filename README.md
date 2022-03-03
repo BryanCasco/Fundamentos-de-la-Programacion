@@ -137,7 +137,7 @@ print(type(a))       #Class "str", tambièn es valido comillas simples ''
 ## Casting en Python
 Hacer un cast o casting significa convertir un tipo de dato a otro. Anteriormente hemos visto tipos como los int, string o float. Pues bien, es posible convertir de un tipo a otro. 
 
--Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciones con dos tipos distintos.
+- Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciones con dos tipos distintos.
 ```
 a = 1      # Class 'int'
 b = 2.3    # Class 'float'
@@ -156,7 +156,7 @@ b = "2.3"
 c = a + b    # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
--Conversión explicita. Por otro lado, podemos hacer conversiones entre tipos o cast de manera explícita haciendo uso de diferentes funciones que nos proporciona Python. 
+- Conversión explicita. Por otro lado, podemos hacer conversiones entre tipos o cast de manera explícita haciendo uso de diferentes funciones que nos proporciona Python. 
 
 Convertir float a int
 
@@ -188,7 +188,7 @@ print(float(a))
 ## List
 Las listas en Python son un tipo de dato que permite almacenar datos de cualquier tipo. Son mutables y dinámicas, lo cual es la principal diferencia con los sets y las tuplas.
 
--Crear listas Python
+- Crear listas Python
 
 Son uno de los tipos o estructuras de datos más versátiles del lenguaje, ya que permiten almacenar un conjunto arbitrario de datos. Es decir, podemos guardar en ellas prácticamente lo que sea. Si vienes de otros lenguajes de programación, se podría decir que son similares a los arrays.
 ```
@@ -207,7 +207,7 @@ lista = [1, "Hola", 3.67, [1, 2, 3]]
 ## Tuple
 Las tuplas en Python son un tipo o estructura de datos que permite almacenar datos de una manera muy parecida a las listas, con la salvedad de que son inmutables.
 
--Crear tupla Python
+- Crear tupla Python
 
 Son inmutables, lo que significa que no pueden ser modificadas una vez declaradas, y en vez de inicializarse con corchetes se hace con (). Dependiendo de lo que queramos hacer, las tuplas pueden ser más rápidas.
 ```
@@ -226,7 +226,7 @@ print(tupla)
 ## Dictionary
 Los diccionarios en Python son una estructura de datos que permite almacenar su contenido en forma de llave y valor.
 
--Crear diccionario Python
+- Crear diccionario Python
 
 Un diccionario en Python es una colección de elementos, donde cada uno tiene una llave key y un valor value. Los diccionarios se pueden crear con paréntesis {} separando con una coma cada par key: value. En el siguiente ejemplo tenemos tres keys que son el nombre, la edad y el documento.
 ```
