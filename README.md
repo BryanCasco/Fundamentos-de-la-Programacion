@@ -152,7 +152,7 @@ a = 1
 b = "2.3"
 
 c = a + b    # TypeError: unsupported operand type(s) for +: 'int' and 'str'
-
+```
     -Conversión explicita. Por otro lado, podemos hacer conversiones entre tipos o cast de manera explícita haciendo uso de diferentes funciones que nos proporciona Python. 
 
 Convertir float a int
